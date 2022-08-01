@@ -19,14 +19,14 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, assumenda? Alias quos porro maiores. Id beatae deserunt atque facere? Quisquam possimus corporis eaque recusandae, porro repellat maxime sequi quod explicabo?
                     </p>
                     <br>
-                    <a href="#" class="btn">read more</a>
+                    <a href="#" class="myBtn">read more</a>
                 </div>
             </div>
         </header>
     </div>
 </div>
-<div class="shadow one"></div>
-<div class="shadow two"></div>
+<div class="myShadow one"></div>
+<div class="myShadow two"></div>
 <div class="links">
     <ul>
         <li>

@@ -4,7 +4,7 @@
     box-sizing:border-box;
 }
 body{
-
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .myContainer{
     min-height: 100vh;
@@ -60,10 +60,10 @@ body{
     -o-border-radius: 2px;
     background-color:#eee;
     transform: 0.5s;
-    -webkit-transform: 0.5s;
+    /* -webkit-transform: 0.5s;
     -moz-transform: 0.5s;
     -ms-transform: 0.5s;
-    -o-transform: 0.5s;
+    -o-transform: 0.5s; */
 }
 .bar::before, .bar::after{
     content:'';
@@ -82,7 +82,7 @@ body{
     -moz-transform: translateY(-9px);
     -ms-transform: translateY(-9px);
     -o-transform: translateY(-9px);
-}
+} 
 .bar::after{
     transform: translateY(9px);
     -webkit-transform: translateY(9px);
@@ -108,8 +108,168 @@ body{
 header{
     min-height: 100vh;
     width: 100px;
-    background:url('/img/pippo.png') no-repeat;
-    background-position: top;
-    background-position: center;
+    background:url('/img/pippo.png') no-repeat top center / cover;
+    /* background-position: top; */
+    /* background-position: center; */
     position: relative;
 }
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    max-width: 35rem;
+    text-align: center;
+    color: #fff;
+    padding: 0 2rem;
+}
+.title{
+    font-size: 2.7rem;
+}
+.myBtn{
+    margin-top: 1rem;
+    padding: 0.6rem 1.8rem;
+    background-color: #1178e7;
+    border: none;
+    border-radius: 25px;
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+.myContainer .active .bar{
+    transform: rotate(360deg);
+    background-color: transparent;
+}
+.myContainer .active .bar::before{
+   transform: translateY(0) rotate(45deg);
+}
+.myContainer .active .bar::after{
+    transform: translateY(0) rotate(-45deg);
+}
+.myContainer.active .main{
+    animation: main-animation 0.5s ease;
+    transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+}
+@keyframes main-animation{
+    from{
+        transform: translate(0);
+    }
+    to{transform: perspective(1300) rotateY(20deg) translateZ(310px) scale(0.5);}
+}
+.links{
+    position: absolute;
+    width: 30%;
+    right: 0;   
+    top: 0;
+    z-index: 2;
+    height: 100vh;  
+    display: flex;  
+    justify-content: center;
+    align-items: center;    
+}
+ul{
+    list-style: none;   
+}
+.links a{
+    text-decoration: none;
+    color: #fff;
+    padding: 1.5rem 0;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    transform: translateY(10px);
+    animation: hide 0.5s forwards ease;
+}
+.links a:hover{
+    color: #fff;
+
+}
+.myContainer.active .links a{
+    animation: appear 0.5s forwards ease var(--i);
+
+}
+@keyframes hide{
+    from{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+    to{
+        opacity: 0;
+        transform: translateY(10px);
+    }
+}
+.myShadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: 0.5s;
+    background-color: #fff;
+}
+.myShadow.one{
+    z-index: -1;
+    opacity: 0.15;
+}
+.myShadow.two{
+    z-index: -2;
+    opacity: 0.1;
+}
+.myContainer.active .myShadow.one{
+    animation: shadow-one 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5);
+}
+@keyframes shadow-one{
+    0%{
+        transform: translate(0);
+
+    }
+    5%{
+        transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateZ(215px) scale(0.5); 
+    }
+}
+.myContainer.active .myShadow.two{
+    animation: shadow-two 0.6s ease-out;
+    transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5);
+}
+@keyframes shadow-two{
+    0%{
+        transform: translate(0);
+
+    }
+    20%{
+        transform: perspective(1300px) rotateY(20deg) translateZ(310px) scale(0.5);
+    }
+    100%{
+        transform: perspective(1300px) rotateY(20deg) translateZ(120px) scale(0.5); 
+    }
+}
+.myContainer.active .main:hover + .myShadow.one{
+    transform: perspective(1300px) rotateY(20deg) translateZ(230px) scale(0.5); 
+}
+.myContainer.active .main:hover{
+    transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5); 
+}
+
+
+
+
+
+
+
+

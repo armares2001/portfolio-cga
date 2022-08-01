@@ -3221,7 +3221,12 @@ __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
   \*****************************/
 /***/ (() => {
 
-// console.log(2);
+var menu_2 = document.querySelector('.menu-2');
+var container = document.querySelector('.myContainer');
+menu_2.addEventListener('click', function () {
+  container.classList.toggle('active');
+  console.log('funziona');
+});
 
 /***/ }),
 

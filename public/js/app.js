@@ -3223,9 +3223,16 @@ __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
 
 var menu_2 = document.querySelector('.menu-2');
 var container = document.querySelector('.myContainer');
-menu_2.addEventListener('click', function () {
-  container.classList.toggle('active');
-  console.log('funziona');
+var main = document.querySelector('.main'); // console.log(main);
+
+menu_2.addEventListener('click', function (e) {
+  container.classList.toggle('active'); // console.log(container.classList.contains('active'));
+});
+main.addEventListener('click', function () {
+  if (container.classList.contains('active')) {
+    console.log('ciao');
+    container.classList.toggle('active');
+  }
 });
 
 /***/ }),

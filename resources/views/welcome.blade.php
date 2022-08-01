@@ -1,3 +1,3 @@
-<x-layout>
+<x-layout itemid="pippo">
     
 </x-latout>

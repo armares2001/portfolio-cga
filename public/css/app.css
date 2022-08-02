@@ -11039,19 +11039,31 @@ header.pippo{
     /* background-position: top; */
     /* background-position: center; */
     position: relative;
+    /* min-height: 100vh; */
+}
+header.car{
+    min-height: 100vh;
+    width: 100%;
+    background:url('/img/Koenigsegg-Gemera-Hypercar-2020-Header.jpg') no-repeat top center / cover;
+    /* background-position: top; */
+    /* background-position: center; */
+    position: relative;
 }
 .overlay{
-    position: absolute;
+    position: relative;
     width: 100%;
     height: 100%;
     top:0;
     left: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+.margin{
+    margin-top: 100px;
 }
 .inner{
-    max-width: 35rem;
+    /* max-width: 35rem; */
     text-align: center;
     color: #fff;
     padding: 0 2rem;
@@ -11324,5 +11336,19 @@ ul{
 
 
 
+.container-footer{
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    opacity: 90%;
+    /* display:flex; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.footer{
+    margin: 100px, 0px, 0px, 0px;
+
+}
 
 

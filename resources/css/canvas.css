@@ -1,0 +1,17 @@
+a{
+    text-decoration: none;
+    color:gray;
+    font-size: 1.2rem;
+}
+a:hover{
+    color: rgb(80, 80, 80);
+}
+.offcanvas.offcanvas-start {
+   background-color: moccasin;
+    width: 15%;
+    min-width: 200px;
+
+}
+.my-mt{
+    margin-top: 5rem;
+}

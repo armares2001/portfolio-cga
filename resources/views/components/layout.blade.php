@@ -75,7 +75,7 @@
                     <a href="#" class="scale" style="--i:0.30s">Contact</a>
                 </li>
                 <li>
-                    <a href="#" class="scale" style="--i:0.20s">MyArea</a>
+                    <a href="{{route('dashboard')}}" class="scale" style="--i:0.20s">MyArea</a>
                 </li>
             </ul>
         </div>

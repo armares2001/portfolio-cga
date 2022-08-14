@@ -3213,6 +3213,22 @@ __webpack_require__(/*! bootstrap */ "./node_modules/bootstrap/dist/js/bootstrap
 
 __webpack_require__(/*! ./nav */ "./resources/js/nav.js");
 
+__webpack_require__(/*! ./formDashboard */ "./resources/js/formDashboard.js");
+
+/***/ }),
+
+/***/ "./resources/js/formDashboard.js":
+/*!***************************************!*\
+  !*** ./resources/js/formDashboard.js ***!
+  \***************************************/
+/***/ (() => {
+
+var email = document.querySelector('input.my-form-control#email');
+var password = document.querySelector('input.my-form-control#password');
+email.addEventListener('focus', function (e) {// console.log(e.target.placeholder);
+  // e.target.placeholder;
+});
+
 /***/ }),
 
 /***/ "./resources/js/nav.js":

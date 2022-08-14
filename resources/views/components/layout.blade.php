@@ -6,7 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <script src="{{asset('js/app.js')}}" defer></script>
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/06afca6cd1.js" crossorigin="anonymous" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <title>{{ $title }}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=League+Gothic&family=Righteous&family=Syne+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     {{-- <x-nav></x-nav> --}}
@@ -53,7 +67,7 @@
         <div class="links">
             <ul>
                 <li>
-                    <a href="#" class="scale" style="--i:0.5s">Home</a>
+                    <a href="{{ route('home') }}" class="scale" style="--i:0.5s">Home</a>
                 </li>
                 <li>
                     <a href="#" class="scale" style="--i:0.10s">Service</a>

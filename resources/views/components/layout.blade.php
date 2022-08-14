@@ -72,6 +72,9 @@
                 </li>
                 @auth
                     <li>
+                        <a href="{{route('developer.index')}}"  class="scale" style="--i:0.20s">MyArea</a>
+                    </li>
+                    <li>
                         <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="scale" style="--i:0.20s">logout</a>
                     </li>
                     <form id="logout-form" action="{{route('logout')}}" method="POST" class="d-none">

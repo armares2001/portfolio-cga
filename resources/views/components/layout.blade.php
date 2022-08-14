@@ -20,7 +20,7 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="main-container">
             <div class="main">
                 <header class="{{$itemid}}">
@@ -34,17 +34,13 @@
                     </div>
                     <div class="container-footer">
                         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
-                          <div class="col-md-4 d-flex align-items-center">
-                            <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-                            </a>
+                          <div class="col-md-4 d-flex align-items-center ms-3">
                             <span class="text-muted">© 2021 Company, Inc</span>
                           </div>
-                      
+
                           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
-                            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
-                            <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+                            <img src="./img/GitHub.webp" class="ms-3 me-3 rounded border" height="40px" width="40px" alt="GitHub" srcset="">
+                            <img src="./img/gitlab.webp" class="ms-3 me-3" height="40px" width="40px" alt="GitLab" srcset="">
                           </ul>
                         </footer>
                       </div>
@@ -74,9 +70,18 @@
                 <li>
                     <a href="#" class="scale" style="--i:0.30s">Contact</a>
                 </li>
-                <li>
-                    <a href="{{route('dashboard')}}" class="scale" style="--i:0.20s">MyArea</a>
-                </li>
+                @auth
+                    <li>
+                        <a href="{{route('logout')}}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" class="scale" style="--i:0.20s">logout</a>
+                    </li>
+                    <form id="logout-form" action="{{route('logout')}}" method="POST" class="d-none">
+                        @csrf
+                    </form>
+                @else
+                    <li>
+                        <a href="{{route('login')}}"  class="scale" style="--i:0.20s">MyArea</a>
+                    </li>
+                @endauth
             </ul>
         </div>
     </div>

@@ -6,13 +6,13 @@ const overlay=document.querySelector('.overlay');
 menu_2.addEventListener('click',(e)=>{
     container.classList.toggle('active');
     overlay.classList.toggle('active');
-    // console.log(container.classList.contains('active'));
-})   
+    main.classList.toggle('active');
+})
 main.addEventListener('click',()=>{
     if (container.classList.contains('active')) {
-        console.log('ciao');
         container.classList.toggle('active');
         overlay.classList.toggle('active');
+        main.classList.toggle('active');
     }
 })
 

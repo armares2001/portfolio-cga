@@ -11032,6 +11032,9 @@ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     -ms-transition: 0.5s;
     -o-transition: 0.5s;
 }
+/* .main.active{
+    left: 80px;
+} */
 header.pippo{
     min-height: 100vh;
     width: 100%;
@@ -11071,9 +11074,10 @@ header.areaPrivate{
 .overlay{
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top:0;
     left: 0;
+    overflow:scroll;
     /* display: flex; */
     /* justify-content: center; */
     /* align-items: center; */
@@ -11348,8 +11352,33 @@ ul{
 .myContainer.active .main:hover{
     transform: perspective(1300px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
-
-
+@media screen and (max-width: 648px){
+    .main.active{
+        left: -60px;
+    }
+    .myShadow{
+        left: -10px;
+    }
+}
+@media screen and (max-width: 480px){
+    .main.active{
+        left: -80px;
+    }
+    .myShadow{
+        left: -30px;
+    }
+}
+@media screen and (max-width: 400px){
+    .main.active{
+        left: -130px;
+    }
+    .myShadow.one{
+        left: -80px;
+    }
+    .myShadow.two{
+        left: -30px;
+    }
+}
 
 
 
@@ -11362,7 +11391,7 @@ ul{
     width: 100%;
     height: auto;
     background-color: aliceblue;
-    opacity: 90%;
+    opacity: 99%;
     /* display:flex; */
     position: absolute;
     bottom: 0;
@@ -11372,6 +11401,7 @@ ul{
     margin: 100px, 0px, 0px, 0px;
 
 }
+
 .zindex{
     z-index: 10000;
 }

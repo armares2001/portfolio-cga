@@ -35,7 +35,7 @@
                             <i class="fa-solid fa-users fs-1"></i>
                         </div>
                     </div>
-                    <h1 class="text-center my-4">Accedi</h1>
+                    <h1 class="text-center my-4 text-dark">Accedi</h1>
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>

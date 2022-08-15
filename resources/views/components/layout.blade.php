@@ -43,8 +43,8 @@
                             <div class="margin">
                                 {{$slot}}
                             </div>
-                            {{-- <div class="footer"></div> --}}
                         </div>
+                        <div style="height: 120px"></div>
                     </div>
                     <div class="container-footer">
                         <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
@@ -57,8 +57,7 @@
                             <img src="./img/gitlab.webp" class="ms-3 me-3" height="40px" width="40px" alt="GitLab" srcset="">
                           </ul>
                         </footer>
-                      </div>
-                    {{-- <div>ciao</div> --}}
+                    </div>
                 </header>
             </div>
         </div>

@@ -15,3 +15,14 @@ a:hover{
 .my-mt{
     margin-top: 5rem;
 }
+
+ul.ul-dashboard{
+    padding-left: 10px;
+}
+
+@media screen and (max-width: 680px){
+    .offcanvas.offcanvas-start {
+         min-width: 150px;
+     }
+    
+}

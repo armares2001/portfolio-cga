@@ -11408,14 +11408,17 @@ ul{
 .navbar{
     height: 5rem;
 }
-a{
+.accordion-body a{
     text-decoration: none;
     color:gray;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    display: block;
+    margin-left: 20px;
 }
-a:hover{
+.accordion-body a:hover{
     color: rgb(80, 80, 80);
 }
+
 .offcanvas.offcanvas-start {
    background-color: moccasin;
     width: 15%;
@@ -11434,8 +11437,9 @@ ul.ul-dashboard{
     .offcanvas.offcanvas-start {
          min-width: 150px;
      }
-    
+
 }
+
 /* label{
     display: block;
 } */
@@ -11484,7 +11488,11 @@ ul.ul-dashboard{
 }
 
 .tableMs {
-    margin-left: 17%;
+    margin-left: 18%;
 }
+.tableMt{
+    margin-top: 130px;
+}
+
 
 

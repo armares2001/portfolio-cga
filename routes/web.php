@@ -20,7 +20,7 @@ Route::get('/', function () {
 })->name('home');
 
 // Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
-Route::get('/admin/developers/index',[DeveloperController::class,'index'])->name('developer.index');
+Route::get('/admin/developers/index/basic',[DeveloperController::class,'indexBasic'])->name('developer.index.basic');
 Route::get('/admin/developers/create',[DeveloperController::class,'create'])->name('developer.create');
 // Route::get('/admin/developers/create',[DeveloperController::class,'create'])->name('developer.create');
 Route::get('/admin/developers/edit',[DeveloperController::class,'edit'])->name('developer.edit');

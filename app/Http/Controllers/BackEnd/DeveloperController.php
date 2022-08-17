@@ -13,9 +13,9 @@ class DeveloperController extends Controller
         $this->middleware('auth');
     }
 
-    public function index(){
+    public function indexBasic(){
         $developers=User::all();
-        return view('admin.Developers.index');
-        
+        return view('admin.Developers.indexBasic');
+
     }
 }

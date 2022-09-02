@@ -21,6 +21,16 @@ Route::get('/', function () {
 
 // Route::get('/dashboard', [AdminController::class, 'index'])->name('dashboard');
 Route::get('/admin/developers/index/basic',[DeveloperController::class,'indexBasic'])->name('developer.index.basic');
+Route::get('/admin/developers/index/contact',[DeveloperController::class,'indexContact'])->name('developer.index.contact');
+Route::get('/admin/developers/index/skill',[DeveloperController::class,'indexSkill'])->name('developer.index.skill');
+Route::get('/admin/developers/index/formation',[DeveloperController::class,'indexFormation'])->name('developer.index.formation');
+Route::get('/admin/developers/index/other',[DeveloperController::class,'indexOther'])->name('developer.index.other');
+
+
+
+
 Route::get('/admin/developers/create',[DeveloperController::class,'create'])->name('developer.create');
 // Route::get('/admin/developers/create',[DeveloperController::class,'create'])->name('developer.create');
 Route::get('/admin/developers/edit',[DeveloperController::class,'edit'])->name('developer.edit');
+
+

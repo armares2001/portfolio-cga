@@ -18,4 +18,28 @@ class DeveloperController extends Controller
         return view('admin.Developers.indexBasic');
 
     }
+    public function indexContact(){
+        $developers=User::all();
+        return view('admin.Developers.indexContact');
+
+    }
+    public function indexSkill(){
+        $developers=User::all();
+        return view('admin.Developers.indexSkill');
+
+    }
+    public function indexFormation(){
+        $developers=User::all();
+        return view('admin.Developers.indexFormation');
+
+    }
+    public function indexOther(){
+        $developers=User::all();
+        return view('admin.Developers.indexOther');
+
+    }
+    
+
+
+
 }

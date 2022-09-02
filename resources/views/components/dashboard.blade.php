@@ -27,7 +27,12 @@
                   <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <a href="{{ route('developer.index.basic') }}">Basic Info</a>
-                        <a href="" class="mt-1">Contact</a>
+                        <a href="{{ route('developer.index.contact') }}" class="mt-1">Contact</a>
+                        <a href="{{ route('developer.index.skill') }}" class="mt-1">Skills</a>
+                        <a href="{{ route('developer.index.formation') }}" class="mt-1">Formation</a>
+                        <a href="{{ route('developer.index.other') }}" class="mt-1">Other</a>
+
+
                     </div>
                   </div>
                 </div>

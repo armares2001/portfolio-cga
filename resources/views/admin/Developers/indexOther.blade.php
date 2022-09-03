@@ -7,6 +7,8 @@
                 <th scope="col">Full Name</th>
                 <th scope="col">Hobbies</th>
                 <th scope="col">Description</th>
+                <th scope="col">Portfolios</th>
+                <th scope="col">Repositories</th>
               </tr>
             </thead>
             <tbody>

@@ -9,6 +9,7 @@
                 <th scope="col">Nationality</th>
                 <th scope="col">Birthday</th>
                 <th scope="col">Languages</th>
+                <th scope="col">Rule</th>
                 <th scope="col"></th>
               </tr>
             </thead>

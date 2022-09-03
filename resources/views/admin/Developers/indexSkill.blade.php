@@ -7,11 +7,8 @@
                 <th scope="col">Full Name</th>
                 <th scope="col">HardSkills</th>
                 <th scope="col">SoftSkills</th>
-                <th scope="col">Experience Dev Years</th>
-                <th scope="col">Rule</th>
-                <th scope="col">Job</th>
-                <th scope="col">Actually Agency</th>
-                <th scope="col">Job Experience</th>
+                <th scope="col">MacroFormation</th>
+                <th scope="col">MicroFormation</th>
               
               </tr>
             </thead>

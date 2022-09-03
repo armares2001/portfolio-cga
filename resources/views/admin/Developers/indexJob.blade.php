@@ -5,10 +5,10 @@
               <tr>
                 <th scope="col" style="min-width: 60px;"></th>
                 <th scope="col">Full Name</th>
-                <th scope="col">MacroFormation</th>
-                <th scope="col">MicroFormation</th>
-                <th scope="col">Portfolios</th>
-                <th scope="col">Repositories</th>
+                <th scope="col">Experience Dev Years</th>
+                <th scope="col">Job</th>
+                <th scope="col">Actually Agency</th>
+                <th scope="col">Job Experience</th>
               </tr>
             </thead>
             <tbody>

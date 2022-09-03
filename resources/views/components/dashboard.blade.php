@@ -29,7 +29,7 @@
                         <a href="{{ route('developer.index.basic') }}">Basic Info</a>
                         <a href="{{ route('developer.index.contact') }}" class="mt-1">Contact</a>
                         <a href="{{ route('developer.index.skill') }}" class="mt-1">Skills</a>
-                        <a href="{{ route('developer.index.formation') }}" class="mt-1">Formation</a>
+                        <a href="{{ route('developer.index.job') }}" class="mt-1">Job</a>
                         <a href="{{ route('developer.index.other') }}" class="mt-1">Other</a>
 
 

@@ -23,7 +23,7 @@ Route::get('/', function () {
 Route::get('/admin/developers/index/basic',[DeveloperController::class,'indexBasic'])->name('developer.index.basic');
 Route::get('/admin/developers/index/contact',[DeveloperController::class,'indexContact'])->name('developer.index.contact');
 Route::get('/admin/developers/index/skill',[DeveloperController::class,'indexSkill'])->name('developer.index.skill');
-Route::get('/admin/developers/index/formation',[DeveloperController::class,'indexFormation'])->name('developer.index.formation');
+Route::get('/admin/developers/index/job',[DeveloperController::class,'indexJob'])->name('developer.index.job');
 Route::get('/admin/developers/index/other',[DeveloperController::class,'indexOther'])->name('developer.index.other');
 
 

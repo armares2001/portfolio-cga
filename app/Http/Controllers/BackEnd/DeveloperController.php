@@ -28,9 +28,9 @@ class DeveloperController extends Controller
         return view('admin.Developers.indexSkill');
 
     }
-    public function indexFormation(){
+    public function indexJob(){
         $developers=User::all();
-        return view('admin.Developers.indexFormation');
+        return view('admin.Developers.indexJob');
 
     }
     public function indexOther(){

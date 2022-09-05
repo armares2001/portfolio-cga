@@ -15,12 +15,14 @@ return new class extends Migration
     {
         Schema::create('basics', function (Blueprint $table) {
             $table->id();
-            $table->integer('age');
-            $table->string('locality');
-            $table->string('nazionality');
-            $table->integer('birthday');
-            $table->string('languages');
+            $table->integer('age')->nullable();
+            $table->string('locality')->nullable();
+            $table->string('nationality')->nullable();
+            $table->integer('birthday')->nullable();
+            $table->string('languages')->nullable();
             $table->string('rule');
+            $table->unsignedBigInteger('user_id')->nullable();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->timestamps();
         });
     }

@@ -15,7 +15,7 @@ class DeveloperController extends Controller
 
     public function indexBasic(){
         $developers=User::all();
-        return view('admin.Developers.indexBasic');
+        return view('admin.Developers.indexBasic',compact('developers'));
 
     }
     public function indexContact(){
@@ -38,7 +38,7 @@ class DeveloperController extends Controller
         return view('admin.Developers.indexOther');
 
     }
-    
+
 
 
 

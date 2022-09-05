@@ -14,47 +14,19 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Mark</td>
-                <td>Mark</td>
-                <td>paolo</td>
-                <td>Otto</td>
-                <td>leo</td>
-                <td>leo</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>paolo</td>
-                <td>Jacob</td>
-                <td>leo</td>
-                <td>leo</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>paolo</td>
-                <td>Jacob</td>
-                <td>leo</td>
-                <td>leo</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <td>Mark</td>
-                <td>paolo</td>
-                <td>Jacob</td>
-                <td>leo</td>
-                <td>leo</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              {{-- <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr> --}}
+                @foreach ($developers as $developer)
+                    <tr>
+                        <td>{{ $developer->name }} {{ $developer->surname }}</td>
+                        <td>{{ $developer->basic->locality }}</td>
+                        <td>{{ $developer->basic->age }}</td>
+                        <td>{{ $developer->basic->nationality }}</td>
+                        <td>{{ $developer->basic->birthday }}</td>
+                        <td>{{ $developer->basic->languages }}</td>
+                        <td>{{ $developer->basic->rule }}</td>
+                        <td>@mdo</td>
+                    </tr>
+                @endforeach
+
             </tbody>
           </table>
     </div>

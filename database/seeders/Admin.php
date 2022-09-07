@@ -22,7 +22,7 @@ class Admin extends Seeder
     {
         User::create([
             'name' => 'Gianluca',
-            'surname'=>'SalPietro',
+            'surname'=>'Salpietro',
             'email' => 'gianluca.salpietro@gmail.com',
             'email_verified_at' => now(),
             'password' => '$2y$10$O0bB06w1Zj6ofIbzNiUHmuWukDxIH8Dq..FUxp1YjqgqW8upqVIUu',
@@ -49,8 +49,8 @@ class Admin extends Seeder
         ]);
         User::create([
             'name' => 'Marco',
-            'surname'=>"D'izza",
-            'email' => 'marco.d_izza@gmail.com',
+            'surname'=>"D'Izzia",
+            'email' => 'marco.d_izzia@gmail.com',
             'email_verified_at' => now(),
             'password' => '$2y$10$O0bB06w1Zj6ofIbzNiUHmuWukDxIH8Dq..FUxp1YjqgqW8upqVIUu',
             'remember_token' => Str::random(10),
